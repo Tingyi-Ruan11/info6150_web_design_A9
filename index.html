@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 8 assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Registration</h1>
+    <h3>We will send you a pizza after filling the form</h3>
+    <section id="app">
+      <form id="registrationForm" onsubmit="submitHandler(event)">
+        <label for="name"
+          ><div>Name:</div>
+          <input type="text" id="name" name="name" required
+        /></label>
+        <label for="yearOfBirth">
+          <div>Year of Birth:</div>
+          <input type="number" id="yearOfBirth" name="yearOfBirth" required />
+        </label>
+        <label
+          ><input
+            type="checkbox"
+            id="usResidencyStatus"
+            name="usResidencyStatus"
+          />
+          Do you live in the United States?</label
+        >
+        <label for="zipcode"
+          ><div>Zipcode<span style="color: red;">*</span>:</div>
+          <input type="text" id="zipcode" name="zipcode"
+        /></label>
+        <div><span style="color: red;">*</span>: Required if you are living in the US.</div>
+        <label for="password"
+          ><div>Password:</div>
+          <input type="password" id="password" name="password" required
+        /></label>
+        <label>Preferred type of pizza:</label>
+        <div>
+          <input
+            type="radio"
+            name="preferredTypeOfPizza"
+            value="With pineapple"
+            required
+          />
+          With pineapple
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="preferredTypeOfPizza"
+            value="Without pineapple"
+            required
+          />
+          Without pineapple
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="preferredTypeOfPizza"
+            value="I do not like pizza"
+            required
+          />
+          I do not like pizza
+        </div>
+        <button type="submit" id="submit-button">submit</button>
+      </form>
+      <div id="result"></div>
+      <div id="errormsg"></div>
+    </section>
+  </body>
+</html>

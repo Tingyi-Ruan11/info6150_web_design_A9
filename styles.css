@@ -1,0 +1,89 @@
+body {
+    font-family: 'Circular', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+    background-color: rgb(253, 229, 233);
+    color: #484848;
+    margin: 0;
+    padding: 20px;
+    margin-top: 10%;
+
+}
+
+h1 {
+    color: #FF385C;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #FF385C;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div {
+    margin: 10px;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+#submit-button {
+    background-color: #FF385C;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.2s;
+}
+
+#submit-button:hover {
+    background-color: #e90c3f;
+}
+
+#errorMessage, #successMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#errormsg {
+    color: #D93900;
+}
+
+#result {
+    color: #008489;
+}
